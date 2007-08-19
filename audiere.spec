@@ -52,6 +52,7 @@ Requires:	libogg-devel
 Requires:	libvorbis-devel
 Requires:	speex-devel
 Provides:	%{name} = %{version}-%{release}
+Provides:	lib%{name} = %{version}-%{release}
 
 %description -n %{develname}
 Development headers and libraries for audiere.
@@ -77,7 +78,7 @@ rm -rf %{buildroot}
 
 %files -n %{libname}
 %defattr(-,root,root)
-%{_libdir}/libaudiere-1.9.4.so
+%{_libdir}/libaudiere-%{version}.so
 
 %files -n %{develname}
 %defattr(-,root,root)
