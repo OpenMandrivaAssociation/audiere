@@ -5,7 +5,7 @@
 Summary:		Audiere is a high-level audio API
 Name:			audiere
 Version:		1.9.4
-Release:		%mkrel 2
+Release:		%mkrel 3
 License:		LGPL
 Group:			Development/C++
 URL:			http://audiere.sourceforge.net
@@ -20,16 +20,10 @@ BuildRequires:		speex-devel
 BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Audiere is open source and licensed under the LGPL. This means
-that you may freely use Audiere in commercial products, as long
-as you do not modify the source code. If you do modify Audiere
-and release a product that uses your modifications, you must
-release your changes to the code under the LGPL as well.
-
-Audiere is portable. It is tested on Windows, Linux-i386, Cygwin,
-and IRIX with at least three major compilers. Most of Audiere is
-endian-independent, so I expect it would work with few
-modifications on other architectures.
+Audiere is a high-level audio API. It can play Ogg Vorbis, MP3,
+FLAC, uncompressed WAV, AIFF, MOD, S3M, XM, and IT files. For
+audio output, Audiere supports DirectSound or WinMM in Windows,
+OSS on Linux and Cygwin, and SGI AL on IRIX.
 
 %package -n %{libname}
 Summary:	Audiere is a high-level audio API
