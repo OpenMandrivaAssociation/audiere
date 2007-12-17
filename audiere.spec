@@ -17,7 +17,6 @@ BuildRequires:		libcdaudio-devel
 BuildRequires:		libogg-devel
 BuildRequires:		libvorbis-devel
 BuildRequires:		speex-devel
-BuildRoot:		%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Audiere is a high-level audio API. It can play Ogg Vorbis, MP3,
