@@ -2,7 +2,7 @@
 %define libname %mklibname %{name} %{major}
 %define develname %mklibname %{name} -d
 
-Summary:		Audiere is a high-level audio API
+Summary:		High-level audio API
 Name:			audiere
 Version:		1.9.4
 Release:		%mkrel 3
@@ -26,7 +26,7 @@ audio output, Audiere supports DirectSound or WinMM in Windows,
 OSS on Linux and Cygwin, and SGI AL on IRIX.
 
 %package -n %{libname}
-Summary:	Audiere is a high-level audio API
+Summary:	High-level audio API
 Group:		System/Libraries
 
 %description -n %{libname}
