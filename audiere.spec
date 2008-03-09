@@ -5,8 +5,8 @@
 Summary:		High-level audio API
 Name:			audiere
 Version:		1.9.4
-Release:		%mkrel 4
-License:		LGPL
+Release:		%mkrel 5
+License:		LGPLv2+
 Group:			Development/C++
 URL:			http://audiere.sourceforge.net
 Source:			http://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.bz2
