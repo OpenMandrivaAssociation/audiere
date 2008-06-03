@@ -5,7 +5,7 @@
 Summary:		High-level audio API
 Name:			audiere
 Version:		1.9.4
-Release:		%mkrel 5
+Release:		%mkrel 6
 License:		LGPLv2+
 Group:			Development/C++
 URL:			http://audiere.sourceforge.net
@@ -45,8 +45,8 @@ Requires:	libcdaudio-devel
 Requires:	libogg-devel
 Requires:	libvorbis-devel
 Requires:	speex-devel
-Provides:	%{name} = %{version}-%{release}
-Provides:	lib%{name} = %{version}-%{release}
+Provides:	%{name}-devel = %{version}-%{release}
+Provides:	lib%{name}-devel = %{version}-%{release}
 
 %description -n %{develname}
 Development headers and libraries for audiere.
