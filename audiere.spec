@@ -13,6 +13,7 @@ Source:		http://prdownloads.sourceforge.net/audiere/%{name}-%{version}-src.tar.b
 Patch0:		%{name}-1.9.4-speex.patch
 Patch1:		%{name}-1.9.4-gcc43.patch
 Patch2:		%{name}-1.9.4-flac.patch
+Patch3:		audiere-1.9.4-add-missing-header.patch
 BuildRequires:	audiofile-devel
 BuildRequires:	libflac-devel
 BuildRequires:	libcdaudio-devel
@@ -58,6 +59,7 @@ Development headers and libraries for audiere.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 sh ./bootstrap
