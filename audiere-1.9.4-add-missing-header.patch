@@ -1,0 +1,11 @@
+diff -Naur audiere/src/utility.cpp audiere.tpg/src/utility.cpp
+--- audiere/src/utility.cpp	2003-06-03 04:51:42.000000000 +0000
++++ audiere.tpg/src/utility.cpp	2010-02-13 20:05:45.000000000 +0000
+@@ -4,6 +4,7 @@
+ 
+ 
+ #include <ctype.h>
++#include <cstdio>
+ #include "utility.h"
+ #include "internal.h"
+ 
