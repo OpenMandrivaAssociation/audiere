@@ -87,3 +87,54 @@ rm -rf %{buildroot}
 %{_includedir}/audiere.h
 %{_libdir}/libaudiere.a
 %{_libdir}/libaudiere.so
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 1.9.4-10mdv2011.0
++ Revision: 610005
+- rebuild
+
+* Sat Feb 13 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1.9.4-9mdv2010.1
++ Revision: 505582
+- Patch3: add missing header
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 1.9.4-7mdv2009.0
++ Revision: 266224
+- rebuild early 2009.0 package (before pixel changes)
+
+* Tue Jun 03 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.9.4-6mdv2009.0
++ Revision: 214779
+- Patch0: fix compilation against speex
+- Patch1: fix compilation against gcc-4.3
+- Patch2: fix compilation against flac
+- fix provides for devel library
+
+* Sun Mar 09 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.9.4-5mdv2008.1
++ Revision: 183136
+- new license policy
+
+* Mon Feb 18 2008 Thierry Vignaud <tv@mandriva.org> 1.9.4-4mdv2008.1
++ Revision: 170768
+- rebuild
+- fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Aug 20 2007 Thierry Vignaud <tv@mandriva.org> 1.9.4-3mdv2008.0
++ Revision: 67948
+- fix description
+
+* Sun Aug 19 2007 Tomasz Pawel Gajc <tpg@mandriva.org> 1.9.4-2mdv2008.0
++ Revision: 66520
+- add more provides on devel package
+
+* Mon Jun 25 2007 Tomasz Pawel Gajc <tpg@mandriva.org> 1.9.4-1mdv2008.0
++ Revision: 44190
+- Import audiere
+
