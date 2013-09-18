@@ -5,7 +5,7 @@
 Summary:	High-level audio API
 Name:		audiere
 Version:	1.9.4
-Release:	%mkrel 10
+Release:	11
 License:	LGPLv2+
 Group:		Sound
 URL:		http://audiere.sourceforge.net
@@ -15,12 +15,11 @@ Patch1:		%{name}-1.9.4-gcc43.patch
 Patch2:		%{name}-1.9.4-flac.patch
 Patch3:		audiere-1.9.4-add-missing-header.patch
 BuildRequires:	audiofile-devel
-BuildRequires:	libflac-devel
-BuildRequires:	libcdaudio-devel
-BuildRequires:	libogg-devel
-BuildRequires:	libvorbis-devel
+BuildRequires:	pkgconfig(flac)
+BuildRequires:	pkgconfig(libcdaudio)
+BuildRequires:	pkgconfig(ogg)
+BuildRequires:	pkgconfig(vorbis)
 BuildRequires:	speex-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Audiere is a high-level audio API. It can play Ogg Vorbis, MP3,
@@ -43,10 +42,10 @@ OSS on Linux and Cygwin, and SGI AL on IRIX.
 Summary:	Development headers and libraries for audiere
 Group:		Development/C++
 Requires:	%{libname} = %{version}-%{release}
-Requires:	libflac-devel
-Requires:	libcdaudio-devel
-Requires:	libogg-devel
-Requires:	libvorbis-devel
+Requires:	pkgconfig(flac)
+Requires:	pkgconfig(libcdaudio)
+Requires:	pkgconfig(ogg)
+Requires:	pkgconfig(vorbis)
 Requires:	speex-devel
 Provides:	%{name}-devel = %{version}-%{release}
 Provides:	lib%{name}-devel = %{version}-%{release}
@@ -71,17 +70,10 @@ sh ./bootstrap
 %install
 %makeinstall_std
 
-rm %{buildroot}%{_libdir}/lib*.la
-
-%clean
-rm -rf %{buildroot}
-
 %files -n %{libname}
-%defattr(-,root,root)
 %{_libdir}/libaudiere-%{version}.so
 
 %files -n %{develname}
-%defattr(-,root,root)
 %doc doc/*.txt
 %{_bindir}/audiere-config
 %{_includedir}/audiere.h
