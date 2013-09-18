@@ -77,8 +77,7 @@ sh ./bootstrap
 %doc doc/*.txt
 %{_bindir}/audiere-config
 %{_includedir}/audiere.h
-%{_libdir}/libaudiere.a
-%{_libdir}/libaudiere.so
+%{_libdir}/libaudiere*
 
 
 %changelog
