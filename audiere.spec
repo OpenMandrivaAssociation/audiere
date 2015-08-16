@@ -62,7 +62,7 @@ Development headers and libraries for audiere.
 %patch2 -p1
 %patch3 -p1
 
-chmod -x small-buffers.txt device_parameters.txt
+chmod -x doc/{small-buffers,device_parameters}.txt
 
 
 %build
