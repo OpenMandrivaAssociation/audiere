@@ -16,6 +16,11 @@ Patch0:		%{name}-1.9.4-speex.patch
 Patch1:		%{name}-1.9.4-gcc43.patch
 Patch2:		%{name}-1.9.4-flac.patch
 Patch3:		audiere-1.9.4-add-missing-header.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	audiofile-devel
 BuildRequires:	pkgconfig(flac)
 BuildRequires:	pkgconfig(libcdaudio)
